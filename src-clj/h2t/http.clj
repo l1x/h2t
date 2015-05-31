@@ -16,4 +16,5 @@
 (def app
   (-> (handler/site main-routes)
       (resource/wrap-resource "public")
+;      (wrap-content-type)
       (wrap-base-url)))
